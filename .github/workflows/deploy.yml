@@ -1,13 +1,12 @@
-name: Deploy ML Project
+name: Test ML App
 
 on:
   push:
-    branches: [ "main" ]   # Runs whenever you push to main
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
@@ -22,6 +21,6 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run app test
+    - name: Test Flask app import
       run: |
-        python -m flask --version
+        python -c "import app; print('✅ Flask app loaded successfully')"
