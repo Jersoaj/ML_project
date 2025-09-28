@@ -9,7 +9,7 @@ print(df.columns)
 
 # Selecting features and target
 X = df[['RAM (GB)', 'Screen Size (inch)', 'Battery Life (hours)']]
-y = df['Price']
+y = df['Price ($)']
 
 # Splitting data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
