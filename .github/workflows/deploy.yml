@@ -1,4 +1,4 @@
-name: Test ML App
+name: Deploy ML Project
 
 on:
   push:
