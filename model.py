@@ -8,7 +8,7 @@ df = pd.read_csv("laptop_prices.csv")
 print(df.columns)
 
 # Selecting features and target
-X = df[['RAM (GB)', 'Screen Size (inch)', 'Battery Life (hrs)']]
+X = df[['RAM (GB)', 'Screen Size (inch)', 'Battery Life (hours)']]
 y = df['Price']
 
 # Splitting data
